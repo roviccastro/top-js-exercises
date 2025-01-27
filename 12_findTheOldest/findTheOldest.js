@@ -1,11 +1,11 @@
 const findTheOldest = function(arr) {
 
   let pers = arr.sort(function (a, b) {
-    let date1 = new Date('January 27, 2025, 22:10:18 GMT+80:00');
+    let date1 = new Date().getFullYear();
 
     if (!a.yearOfDeath){
     } else if (!b.yearOfDeath){
-      b.yearOfDeath = date1.getFullYear();
+      b.yearOfDeath = date1;
     } else {
     }
       
